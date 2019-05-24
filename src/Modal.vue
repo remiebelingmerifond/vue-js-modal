@@ -516,7 +516,7 @@ export default {
      */
     handleBackgroundClick () {
       if (this.clickToClose) {
-        this.toggle(false)
+        this.toggle(false, { aborted: true })
       }
     },
 
