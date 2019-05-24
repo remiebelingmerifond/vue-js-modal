@@ -16,7 +16,6 @@ export const createModalEvent = (args = {}) => {
   return {
     id: generateId(),
     timestamp: Date.now(),
-    canceled: false,
     ...args
   }
 }
