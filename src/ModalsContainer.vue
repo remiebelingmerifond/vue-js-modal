@@ -11,7 +11,8 @@
         :is="modal.component"
         v-bind="modal.componentAttrs"
         v-on="$listeners"
-        @close="$modal.hide(modal.modalAttrs.name)"
+        @close="$modal.hide(modal.modalAttrs.name, { aborted: false })"
+        @abort="$modal.hide(modal.modalAttrs.name, { aborted: true })"
       />
     </modal>
   </div>
